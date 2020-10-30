@@ -37,7 +37,6 @@ class ProductsRepository implements IProductsRepository {
       where: { name },
     });
 
-    console.log(product);
     return product;
   }
 
