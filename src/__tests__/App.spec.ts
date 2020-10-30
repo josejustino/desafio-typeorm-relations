@@ -36,7 +36,7 @@ describe('App', () => {
     await mainConnection.close();
   });
 
-  it('should be able to create a new customer', async () => {
+  it.only('should be able to create a new customer', async () => {
     const response = await request(app).post('/customers').send({
       name: 'Rocketseat',
       email: 'oi@rocketseat.com.br',
